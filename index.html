@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Paywall Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to My Article</h1>
+
+  <div id="paywall">
+    <p>This is premium content. You need to pay to see more!</p>
+  </div>
+
+  <div id="hiddenContent" style="display: none;">
+    <p>Yay! 🎉 You paid and now you can read the secret stuff!</p>
+  </div>
+
+  <div id="terms">
+    <h2>Terms and Conditions</h2>
+    <p>By using this website, you agree to the following:</p>
+    <ul>
+      <li>Payments are final and non-refundable.</li>
+      <li>Do not share or redistribute paid content.</li>
+      <li>Your use of this website means you accept these terms.</li>
+    </ul>
+  </div>
+
+  <!-- ✅ Moved inside body -->
+  <div id="paymentLink" style="margin-top: 30px;">
+    <a href="payment.html">
+      <button>Proceed to Bitcoin Payment</button>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

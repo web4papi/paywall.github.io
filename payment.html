@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bitcoin Payment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      padding: 40px;
+      text-align: center;
+    }
+    .address-box {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border: 2px solid #ccc;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+      word-break: break-word;
+    }
+    .notice {
+      margin-top: 20px;
+      color: red;
+      font-weight: bold;
+    }
+    form {
+      margin-top: 30px;
+    }
+    input[type="email"],
+    input[type="text"] {
+      padding: 10px;
+      width: 250px;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bitcoin Payment Required</h1>
+  <p>To access the premium content, send <strong>$6 USD</strong> worth of Bitcoin to the address below:</p>
+
+  <div class="address-box">
+    bc1quy23t8ls8a2ja8h4yy48x08xwc3ldwzdhgegxe
+  </div>
+
+  <p class="notice">⚠️ Make sure to send the exact amount. Bitcoin payments are final and non-refundable.</p>
+
+  <form action="verify-payment.html" method="GET">
+    <p>Once payment is complete, enter your email and the <strong>last 4 characters</strong> of your Bitcoin address:</p>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="transaction-id">Last 4 Characters of Bitcoin Address:</label><br>
+    <input type="text" id="transaction-id" name="transaction-id" maxlength="4" required><br><br>
+    
+    <button type="submit">Verify Payment</button>
+  </form>
+
+</body>
+</html>
